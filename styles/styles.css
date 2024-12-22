@@ -3,17 +3,90 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: #949494;
+    background-color: #f2f2f0;
 }
+
+header {
+    background-image: url('../images/header5.jpg'); /* Ruta de tu imagen */
+    background-size: cover; /* Abarca todo el espacio del header */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita repeticiones */
+    height: 150px; /* Ajusta la altura del header */
+}
+
+h2 {
+    font-size: 48px; /* Tamaño del texto */
+    font-weight: bold; /* Hace el texto más grueso */
+    text-align: center; /* Centra el texto */
+    font-family: 'Arial Black', Arial, sans-serif; /* Fuente estilo "Arial Black" */
+    margin-top: 20px; /* Espacio superior opcional */
+    margin-bottom: 20px; /* Espacio inferior opcional */
+}
+
+
+#charts {
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
+}
+
+#charts-container {
+    display: flex; /* Flexbox para alinear tabla e imagen */
+    justify-content: space-between; /* Separa los elementos horizontalmente */
+    align-items: center; /* Centra verticalmente la tabla y la imagen */
+    gap: 20px; /* Espacio entre la tabla y la imagen */
+}
+
+#table-container {
+    flex: 1; /* Ocupa el espacio restante */
+}
+
+#trackImage {
+    flex-shrink: 0; /* Evita que la imagen se reduzca */
+}
+
+#trackImage img {
+    width: 450px; /* Tamaño de la imagen */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 10px; /* Bordes redondeados opcionales */
+    object-fit: cover; /* Ajusta el contenido sin deformar */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    text-align: left;
+}
+
+thead th {
+    border-bottom: 2px solid #ddd;
+    font-weight: bold;
+}
+
+tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+    background-color: #f9f9f9; /* Efecto hover */
+}
+
+td, th {
+    padding: 10px;
+}
+
+td img {
+    width: 50px; /* Tamaño de la portada */
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+ 
 video {
     max-width: 80%;
     margin-top: 20px;
-}
-header{
-background-color: azure;
-padding: 20px;
-display: flex;
-    flex-direction: column;
-    align-items: center;
-
 }
