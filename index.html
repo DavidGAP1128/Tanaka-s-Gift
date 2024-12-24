@@ -4,17 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 
-    <title>Tanaka's Gift</title>
+
+    <title>Navidades con Ismael</title>
 </head>
 <body id="cuerpo">
-    <header id="cabeza">
+    <header id="main-header">
+        <img src="images/logo (1).png" alt="Navidades con Ismael" class="logo" />
     </header>
-    <h2>TRACKLIST</h2>
-<h3>Descripcion blah blah</h3>  
+
+    <section id="hero">
+        <h1>NAVIDADES CON ISMAEL</h1>
+        <p>AVAILABLE NOW</p>
+        <div class="hero-buttons">
+            <button class="stream-button">STREAM BELOW</button>
+        </div>
+    </section>
+    
+
+<h2>TRACKLIST</h2>
   <section id="charts">
         <div id="charts-container">
             <div id="table-container">
+                <audio id="audio1" src="songs/santaClaus.mp3"></audio>
+                <audio id="audio2" src="songs/humildeOracion.mp3"></audio> 
+                <audio id="audio3" src="songs/nocheDePaz.mp3"></audio>
+
                 <table>
                     <thead>
                         <tr>
@@ -22,32 +39,61 @@
                             <th>Cover</th>
                             <th>Track</th>
                             <th>Artist</th>
+                            <th>    </th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>1</td>
-                            <td><img src="images/_SAE7409 copy 3.jpg" alt="Santa Claus" /></td>
+                            <td><img src="images/img2.jpg" alt="Santa Claus" /></td>
                             <td>Santa Claus llegó a la ciudad</td>
                             <td>Ismael González</td>
+                            <td>
+                                <div class="actions">
+                                    <button class="play" onclick="playTrack(1)">▶</button>
+                                    <button class="pause" onclick="pauseTrack(1)">⏸</button>
+                                    <div class="gif-container" id="gif1">
+                                        <iframe src="https://giphy.com/embed/g5vKBBaQKuA2MzVpmz" width="50" height="50" frameBorder="0" allowFullScreen></iframe>
+                                    </div>
+                                </div>
+                            </td>
+                         
                         </tr>
                         <tr>
                             <td>2</td>
-                            <td><img src="images/_SAE7409 copy 3.jpg" alt="Humilde oracion" /></td>
+                            <td><img src="images/img2.jpg" alt="Humilde oracion" /></td>
                             <td>Mi humilde oración</td>
                             <td>Ismael González</td>
+                            <td>
+                                <div class="actions">
+                                    <button class="play" onclick="playTrack(2)">▶</button>
+                                    <button class="pause" onclick="pauseTrack(2)">⏸</button>
+                                    <div class="gif-container" id="gif2">
+                                        <iframe src="https://giphy.com/embed/g5vKBBaQKuA2MzVpmz" width="50" height="50" frameBorder="0" allowFullScreen></iframe>
+                                    </div>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>3</td>
-                            <td><img src="images/_SAE7409 copy 3.jpg" alt="Noche de paz" /></td>
+                            <td><img src="images/img2.jpg" alt="Noche de paz" /></td>
                             <td>Noche de paz</td>
                             <td>Ismael González</td>
+                            <td>
+                                <div class="actions">
+                                    <button class="play" onclick="playTrack(3)">▶</button>
+                                    <button class="pause" onclick="pauseTrack(3)">⏸</button>
+                                    <div class="gif-container" id="gif3">
+                                        <iframe src="https://giphy.com/embed/g5vKBBaQKuA2MzVpmz" width="50" height="50" frameBorder="0" allowFullScreen></iframe>
+                                    </div>
+                                </div>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
             </div>
             <figure id="trackImage">
-                <img src="images/_SAE7327 copy 3.jpg" width="450" height="450" alt="tracklist">
+                <img src="images/img1.jpg" width="450" height="450" alt="tracklist">
             </figure>
         </div>
     </section>
@@ -55,11 +101,49 @@
   
 
 
-<h2>MAKING-OF</h2>
-<h3>Descripcion blah blah</h3>  
+<h2>BEHIND THE SCENES</h2>
+<h3 class="Descripcion">Sumérgete en cada instante del proceso creativo que dio vida al álbum 'Navidades con Ismael'. 
+    Descubre la inspiración detrás del albúm y vive la magia de estas fiestas como nunca antes.
+</h3>  
+
+
+<section id="video-section">
     <video controls>
-        <source src="mi-video.mp4" type="video/mp4">
+        <source src="/animacion.mp4" type="video/mp4">
         Tu navegador no soporta el video.
     </video>
+</section>
+
+<div id="ad-container">
+       
+</div>
+<h4>Publicidad Pagada</h4>
+
+
+
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="social-icons">
+                <img src="images/instagram.png" alt="Instagram">
+                <img src="images/facebook.png" alt="Facebook">
+                <img src="images/spotify-logo.png" alt="Spotify">
+                <img src="images/youtube.png" alt="YouTube">
+                <img src="images/tiktok.png" alt="TikTok">
+                <img src="images/twitter.png" alt="Twitter">
+            </div>
+            <button class="newsletter-button">SUSCRÍBETE AL NEWSLETTER</button>
+            <p>&copy; 2024 Bunker Studios Entertainment LLC Todos los derechos reservados.</p>
+            <p>DO NOT SELL MY PERSONAL INFORMATION | "Cualquier infracción significará una acción legal en contra, 
+                siguiendo los estándares establecidos en las leyes internacionales de propiedad intelectual y los términos acordados en este sitio web.
+                 Nos reservamos el derecho de iniciar procedimientos legales en casos de incumplimientos que puedan afectar la reputación,
+                  los derechos de autor o los intereses legítimos de las partes involucradas, incluyendo pero no limitado a sanciones económicas, 
+                  restricciones al acceso a servicios y notificaciones legales oficiales por vías pertinentes. Y, por supuesto, con motivos de ser un naquisimo gato."
+
+            </p>
+        </div>
+    </footer>
+    
+<script src="js/play.js"></script>   
+<script src="js/ads.js"></script>    
 </body>
 </html>

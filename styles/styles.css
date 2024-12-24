@@ -6,23 +6,100 @@ body {
     background-color: #f2f2f0;
 }
 
-header {
-    background-image: url('../images/header5.jpg'); /* Ruta de tu imagen */
-    background-size: cover; /* Abarca todo el espacio del header */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita repeticiones */
-    height: 150px; /* Ajusta la altura del header */
+/* Estilos para el header */
+#main-header {
+    display: flex;
+    justify-content: center; /* Centra el logo horizontalmente */
+    align-items: center; /* Centra el logo verticalmente */
+    padding: 20px 0; /* Espaciado vertical */
+    background-color: #ffffff; /* Fondo blanco */
+    position: relative; /* Asegura que la línea esté justo debajo */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+}
+
+#main-header .logo {
+    max-width: 320px; /* Ajusta el tamaño del logo */
+    height: auto; /* Mantiene las proporciones */
+}
+
+#main-header::after {
+    content: "";
+    display: block;
+    height: 3px; /* Grosor de la línea */
+    background-color: #c70039; /* Color rojo */
+    width: 100%; /* Ocupa todo el ancho */
+    position: absolute;
+    bottom: 0; /* Ubicación justo debajo */
+    left: 0;
+}
+
+
+/* Hero Section */
+#hero {
+    background-color: #f8f8f8; /* Fondo claro */
+    padding: 50px 20px;
+    text-align: center;
+    border-bottom: 2px solid #ddd; /* Línea separadora */
+}
+
+#hero h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #4a4a4a; /* Color del texto principal */
+}
+
+#hero p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #7a7a7a;
+    margin-bottom: 20px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaciado entre los botones */
+}
+
+.hero-buttons button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 2px solid #4a4a4a;
+    background-color: #fff;
+    color: #4a4a4a;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.hero-buttons button:hover {
+    background-color: #4a4a4a;
+    color: #fff;
 }
 
 h2 {
-    font-size: 48px; /* Tamaño del texto */
-    font-weight: bold; /* Hace el texto más grueso */
+    font-family: 'Montserrat', sans-serif; /* Aplica la fuente */
+    font-weight: 400; /* Hace que el texto sea grueso */
+    font-size: 70px; /* Tamaño del texto */
     text-align: center; /* Centra el texto */
-    font-family: 'Arial Black', Arial, sans-serif; /* Fuente estilo "Arial Black" */
-    margin-top: 20px; /* Espacio superior opcional */
-    margin-bottom: 20px; /* Espacio inferior opcional */
+    margin-top: 40px; /* Espacio superior */
+    margin-bottom: 50px; /* Espacio inferior */
 }
 
+h3{
+
+    text-align: center;
+}
+
+.Descripcion{
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0;
+}
 
 #charts {
     text-align: center;
@@ -84,9 +161,277 @@ td img {
     object-fit: cover;
     border-radius: 5px;
 }
-
- 
-video {
-    max-width: 80%;
-    margin-top: 20px;
+.actions {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos */
+    gap: 10px; /* Espacio entre botones y el GIF */
 }
+button {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #f0f0f0;
+}
+
+.play {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.pause {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+
+.gif-container {
+    visibility: hidden; /* Mantén el espacio ocupado pero oculta el GIF */
+    width: 50px; /* Asegúrate de establecer un ancho fijo */
+    height: 50px;
+    margin-left: 10px; /* Espaciado entre los botones y el GIF */
+}
+.gif-container.visible {
+    visibility: visible; /* Muestra el GIF */
+}
+
+#video-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el video verticalmente */
+    align-items: center; /* Centra el video horizontalmente */
+    margin: 0 auto;
+    padding: 10px 0; /* Ajusta el espaciado superior e inferior */
+    text-align: center;
+}
+video {
+    max-width: 45%; /* Asegura que el video no sea demasiado grande */
+    height: auto; /* Mantiene la proporción del video */
+    margin-bottom: 10px; /* Espaciado reducido debajo del video */
+
+}
+#footer {
+    background-color: #000; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    text-align: center;
+    padding: 30px 20px; /* Espaciado interno */
+}
+
+.footer-content {
+    max-width: 800px; /* Ancho máximo */
+    margin: 0 auto; /* Centrado */
+    display: flex;
+    flex-direction: column; /* Organiza en columna */
+    align-items: center; /* Centra el contenido */
+    gap: 20px; /* Espaciado entre elementos */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center; /* Centra los íconos horizontalmente */
+    gap: 15px; /* Espaciado entre íconos */
+}
+
+.social-icons img {
+    width: 40px; /* Tamaño del ícono */
+    height: 40px;
+    filter: invert(1); /* Hace los íconos blancos si son negros */
+}
+
+.newsletter-button {
+    background-color: transparent; /* Fondo transparente */
+    border: 2px solid #fff; /* Borde blanco */
+    color: #fff; /* Texto blanco */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño del texto */
+    cursor: pointer; /* Cursor clickeable */
+    transition: all 0.3s; /* Transición suave */
+}
+
+.newsletter-button:hover {
+    background-color: #fff; /* Fondo blanco al pasar el ratón */
+    color: #000; /* Texto negro */
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 12px; /* Tamaño más pequeño */
+    line-height: 1.5; /* Espaciado entre líneas */
+}
+
+.footer-content p:last-of-type {
+    margin-top: 10px; /* Espacio adicional arriba */
+    font-size: 10px; /* Texto más pequeño */
+}
+
+#ad-container{
+
+    text-align: center; padding: 20px 0;
+    padding: 10px 0; /* Reduce el espaciado */
+    margin-top: 10px; /* Reduce la distancia superior */
+}
+
+#ad-container img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    border: 2px solid #ddd; /* Borde */
+    margin: 10px auto; /* Espaciado */
+    display: block;
+}
+
+h4{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+text-align: center;
+margin-top: 0px; 
+margin-bottom: 20px; 
+color: rgb(4, 35, 191);
+}
+
+/* Ajustes generales para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    #main-header .logo {
+        max-width: 60%; /* Ajusta el tamaño del logo */
+        height: auto; /* Mantiene las proporciones */
+    }
+    
+    #hero h1 {
+        font-size: 40px; /* Reduce el tamaño del título */
+    }
+
+    #hero p {
+        font-size: 16px; /* Texto más pequeño */
+    }
+
+    .hero-buttons button {
+        font-size: 14px; /* Botones más pequeños */
+        padding: 8px 15px;
+    }
+
+    h2 {
+        font-size: 50px; /* Reduce el tamaño de los encabezados */
+        margin: 20px 0;
+    }
+
+    h3 {
+        font-size: 11px; /* Ajusta la descripción */
+        margin: 15px 0;
+    }
+
+    #charts-container {
+        flex-direction: column; /* Apila tabla e imagen verticalmente */
+        gap: 10px;
+    }
+
+    #trackImage img {
+        width: 100%; /* Imagen ocupa el ancho completo */
+        height: auto;
+    }
+
+    table {
+        font-size: 14px; /* Texto más pequeño en la tabla */
+    }
+
+    .actions {
+        flex-direction: column; /* Apila botones y GIF verticalmente */
+        gap: 5px;
+    }
+
+    video {
+        max-width: 80%; /* Video ocupa el ancho completo */
+        margin-bottom: 5px; /* Espaciado reducido debajo del video */
+    }
+
+    #video-section {
+        padding: 5px 0; /* Ajusta el espaciado superior e inferior */
+    }
+
+    #footer {
+        padding: 20px 10px; /* Ajusta el espaciado en el footer */
+    }
+
+    .social-icons img {
+        width: 30px; /* Íconos más pequeños */
+        height: 30px;
+    }
+
+    .newsletter-button {
+        font-size: 14px; /* Texto más pequeño */
+        padding: 8px 15px;
+    }
+
+    #ad-container img {
+        max-width: 80%; height: auto;
+       
+    }
+    h4{
+font-size: 11px;
+
+    }
+
+}
+
+/* Ajustes específicos para pantallas muy pequeñas (iPhone SE, iPhone 12 mini, etc.) */
+@media screen and (max-width: 480px) {
+
+    .Descripcion {
+        font-size: 14px; /* Texto más pequeño */
+        margin: 10px 0; /* Espaciado reducido */
+        margin-inline: 10px;
+    }
+
+    #hero h1 {
+        font-size: 30px; /* Aún más pequeño para dispositivos pequeños */
+    }
+
+    #hero p {
+        font-size: 14px;
+    }
+
+    .hero-buttons button {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 11px;
+    }
+
+    table {
+        font-size: 12px; /* Más pequeño para caber en pantalla */
+    }
+
+    video {
+        max-width: 80%;
+        margin-bottom: 5px;
+    }
+
+    .social-icons img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .newsletter-button {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    #ad-container img {
+        max-width: 80%; height: 80%;
+       
+    }
+
+}
+
