@@ -429,7 +429,7 @@ font-size: 11px;
     }
 
     #ad-container img {
-        max-width: 80%; height: 80%;
+        max-width: 80%; height: auto;
        
     }
 
