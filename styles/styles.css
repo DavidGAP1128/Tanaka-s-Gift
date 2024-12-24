@@ -339,7 +339,11 @@ color: rgb(4, 35, 191);
     table {
         font-size: 20px; /* Texto más pequeño en la tabla */
     }
-
+button {
+   
+    font-size: 20px;
+  
+}
     .actions {
         flex-direction: column; /* Apila botones y GIF verticalmente */
         gap: 5px;
@@ -417,7 +421,7 @@ font-size: 11px;
     }
 
     table {
-        font-size: 12px; /* Más pequeño para caber en pantalla */
+        font-size: 15px; /* Más pequeño para caber en pantalla */
     }
 
     video {
