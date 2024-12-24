@@ -18,7 +18,7 @@ body {
 }
 
 #main-header .logo {
-    max-width: 320px; /* Ajusta el tamaño del logo */
+    max-width: 450px; /* Ajusta el tamaño del logo */
     height: auto; /* Mantiene las proporciones */
 }
 
@@ -337,13 +337,20 @@ color: rgb(4, 35, 191);
     }
 
     table {
-        font-size: 14px; /* Texto más pequeño en la tabla */
+        font-size: 20px; /* Texto más pequeño en la tabla */
     }
 
     .actions {
         flex-direction: column; /* Apila botones y GIF verticalmente */
         gap: 5px;
     }
+
+    button {
+     
+        font-size: 20px;
+  
+    }
+    
 
     video {
         max-width: 80%; /* Video ocupa el ancho completo */
