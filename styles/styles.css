@@ -297,7 +297,7 @@ color: rgb(4, 35, 191);
 }
 
 /* Ajustes generales para pantallas pequeñas */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1080px) {
     #main-header .logo {
         max-width: 60%; /* Ajusta el tamaño del logo */
         height: auto; /* Mantiene las proporciones */
